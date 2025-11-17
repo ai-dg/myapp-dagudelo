@@ -3,6 +3,8 @@ kind: Service
 metadata:
   name: myapp
   namespace: dev
+  annotations:
+    argocd.argoproj.io/health-status: Healthy
 spec:
   selector:
     app: myapp
