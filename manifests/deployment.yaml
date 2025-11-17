@@ -17,12 +17,12 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: dagudeloc/myapp:v1
+        image: dagudeloc/myapp:v2
         ports:
         - containerPort: 80
         env:
         - name: APP_VERSION
-          value: "v1"
+          value: "v2"
         - name: POD_NAME
           valueFrom:
             fieldRef:
