@@ -4,7 +4,7 @@ metadata:
   name: myapp
   namespace: dev
   annotations:
-    argocd.argoproj.io/health-status: Healthy
+    argocd.argoproj.io/health-check: Ignore
 spec:
   selector:
     app: myapp
